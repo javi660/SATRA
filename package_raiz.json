@@ -1,0 +1,11 @@
+{
+  "name": "satra",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -e \"require('child_process').spawn('node', ['src/server.js'], {cwd:'backend', stdio:'inherit', shell:true}); require('child_process').spawn('node', ['server.js'], {cwd:'frontend', stdio:'inherit', shell:true})\"",
+    "dev": "npx concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
