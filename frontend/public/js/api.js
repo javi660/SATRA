@@ -2,7 +2,7 @@
 // SATRA - API Client
 // =============================================
 
-const API_URL = 'https://satra-backend.up.railway.app/api';
+const API_URL = 'https://satra-production.up.railway.app/api';
 
 const api = {
   _getToken() {
