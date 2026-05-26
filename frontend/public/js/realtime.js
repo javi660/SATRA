@@ -12,7 +12,7 @@ const EventosRT = {
     if (!Auth.isLoggedIn()) return;
     const usuario = Auth.getUsuario();
     const token = Auth.getToken();
-    const url = `http://localhost:3001/api/eventos/${usuario.id}?token=${token}`;
+const url = `https://satra-backend.up.railway.app/api/eventos/${usuario.id}?token=${token}`;
 
     try {
       if (this._es) this._es.close();
